@@ -23,6 +23,7 @@ public class StringUtilities {
          - if a2 equals a and b2 equals b, return true
          */
 
+
         char currentChar;
         StringBuilder a2 = new StringBuilder();
         StringBuilder b2 = new StringBuilder();
