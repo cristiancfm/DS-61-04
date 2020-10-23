@@ -20,9 +20,9 @@ public class StringUtilities {
             - read a character of string c
             - search in a and b the same character
             - if the character was found, append the character in a2 if it was found in a, or the same for b
+            - else return false
          - if a2 equals a and b2 equals b, return true
          */
-
 
         char currentChar;
         StringBuilder a2 = new StringBuilder();
@@ -35,9 +35,11 @@ public class StringUtilities {
                 a2.append(currentChar);
             }
 
-            if (b.contains(Character.toString(currentChar))) {
+            else if (b.contains(Character.toString(currentChar))) {
                 b2.append(currentChar);
             }
+
+            else return false;
         }
 
         return a2.toString().equals(a) && b2.toString().equals(b);
@@ -88,17 +90,5 @@ public class StringUtilities {
            mixedString.append(a.substring(charCounterA)); //appends the rest of string A
 
         return mixedString.toString();
-    }
-
-    //checking
-    public static void main(String[] args) {
-        String a = "Bye";
-        String b = "World";
-        String c = null;
-
-        c = StringUtilities.generateRandomValidMix(a,b);
-        System.out.println(c);
-        if(StringUtilities.isValidMix(a,b,c))
-            System.out.println("Valid mix");
     }
 }
