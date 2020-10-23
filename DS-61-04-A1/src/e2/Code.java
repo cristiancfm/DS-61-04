@@ -60,6 +60,8 @@ public class Code {
                         break;
                     }
                 }
+                if(!columnSequence)
+                    break;
             }
 
             if(!fileSequence && !columnSequence)
@@ -144,12 +146,16 @@ public class Code {
 
                     case 'D':
                         b = b < fil - 1 ? b + 1 : b;
+                        break;
                     case 'R':
                         a = a < col - 1 ? a + 1 : a;
+                        break;
                     case 'U':
                         b = b > 0 ? b - 1 : b;
+                        break;
                     case 'L':
                         a = a > 0 ? a - 1 : a;
+                        break;
                 }
 
             }
