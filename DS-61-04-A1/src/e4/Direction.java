@@ -8,13 +8,13 @@ public enum Direction {
 
     private String direction;
 
-    //Getters
-    public String getDirectionString() {
-        return direction;
-    }
-
     //Constructor method
     Direction(String direction) {
         this.direction = direction;
+    }
+
+    @Override
+    public String toString(){
+        return direction;
     }
 }

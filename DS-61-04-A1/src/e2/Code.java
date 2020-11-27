@@ -121,9 +121,9 @@ public class Code {
      * @param movements Array with the different movements to be made for each
     number of the key .
      * @return Resulting code .
-     * @throws IllegalArgumentException if the keypad of the movements are invalid .
+     * @throws IllegalArgumentException if the keypad or the movements are invalid .
      */
-    public static String obtainCode(char[][] keypad, String[] movements) {/* ... */
+    public static String obtainCode(char[][] keypad, String[] movements) {
 
 
         int a, b, i;
